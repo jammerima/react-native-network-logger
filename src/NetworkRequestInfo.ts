@@ -141,7 +141,8 @@ export default class NetworkRequestInfo {
         : this.parseResponseBlob());
 
       if (body === '' || body === null || body === undefined) {
-        return '';
+        const body = '';
+        return body;
       }
 
       return this.stringifyFormat(body);
